@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>算盘2</title>
+    <style>
+        .boxBeamX{
+            height: 106px;
+            width: 160px;
+            position: relative;
+        }
+        .beamBoxX{
+            position: absolute;
+            top: 18px;
+        }
+        .beamBoxX .beam{
+            position: absolute;
+            width: 40px;
+            height: 16px;
+            background-color: #000;
+            text-align: center;
+            line-height: 16px;
+            color: #fff;
+            font-size: 12px;
+        }
+        .beadBoxX{
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 30px;
+
+        }
+        .beadBoxX .bead{
+            width: 28px;
+            height: 16px;
+            border: 1px solid #000;
+            border-radius: 100px;
+            position: absolute;
+            background-color: #0ad845;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="paX_7" class="boxBeamX">
+        <div class="beamBoxX">
+            <div class="beam" style="left: 0px;">千</div>
+            <div class="beam" style="left: 40px;">百</div>
+            <div class="beam" style="left: 80px;">十</div>
+            <div class="beam" style="left: 120px;">个</div>
+        </div>
+
+        <div id="paX_7_1" class="beadBoxX" style="right: 5px;">
+            <div class="bead"></div>
+            <div class="bead" style="top: 34px;"></div>
+            <div class="bead" style="top: 52px;"></div>
+            <div class="bead" style="top: 70px;"></div>
+            <div class="bead" style="top: 88px;"></div>
+        </div>
+
+        <div id="paX_7_2" class="beadBoxX" style="right: 45px;">
+            <div class="bead"></div>
+            <div class="bead" style="top: 34px;"></div>
+            <div class="bead" style="top: 52px;"></div>
+            <div class="bead" style="top: 70px;"></div>
+            <div class="bead" style="top: 88px;"></div>
+        </div>
+
+        <div id="paX_7_3" class="beadBoxX" style="right: 85px;">
+            <div class="bead"></div>
+            <div class="bead" style="top: 34px;"></div>
+            <div class="bead" style="top: 52px;"></div>
+            <div class="bead" style="top: 70px;"></div>
+            <div class="bead" style="top: 88px;"></div>
+        </div>
+
+        <div id="paX_7_4" class="beadBoxX" style="right: 125px;">
+            <div class="bead"></div>
+            <div class="bead" style="top: 34px;"></div>
+            <div class="bead" style="top: 52px;"></div>
+            <div class="bead" style="top: 70px;"></div>
+            <div class="bead" style="top: 88px;"></div>
+        </div>
+    </div>
+<div>
+    <input id="text" type="text" placeholder="请输入数字">
+    <button id="btn">确认</button>
+</div>
+
+</body>
+<script src="jquery.js"></script>
+<script src="abacus2.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style>
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+        .lie{
+            float: left;
+            font-size: 28px;
+        }
+        .lie a{
+            padding: 16px 12px;
+            display: inline-block;
+            margin: 16px 16px;
+            color: #fff;
+            text-decoration:none;
+            background-color: #00b0f0;
+        }
+        .lie:hover{
+            display: inline-block;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<div class="clearfix">
+    <div class="lie"><a href="calculation.jsp">加百子</a></div>
+    <div class="lie"><a href="../abacus/reduceNum.html">减百子</a></div>
+    <div class="lie"><a href="evenAdd.jsp">定数连加</a></div>
+    <div class="lie"><a href="subtraction.jsp">定数连减</a></div>
+    <div class="lie"><a href="number_of_pearls.jsp">看数译珠练习(选择题)</a></div>
+    <div class="lie"><a href="pearls_of_number.jsp">看珠译数练习(选择题)</a></div>
+    <div class="lie"><a href="definite_number.jsp">看珠译数（填空题）（自适应）</a></div>
+    <div class="lie"><a href="definite_number_test.jsp">看珠译数(测试)（填空题）（自适应）</a></div>
+    <div class="lie"><a href="Listen_number_pearls.jsp">听数译珠练习(选择题)</a></div>
+    <div class="lie"><a href="Listen_number_pearls_judge.jsp">听数译珠（判断题）</a></div>
+</div>
+</body>
+</html>

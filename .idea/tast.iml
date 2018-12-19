@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/2048" />
+      <excludeFolder url="file://$MODULE_DIR$/Cocos2d-JS-Game" />
+      <excludeFolder url="file://$MODULE_DIR$/Gobang" />
+      <excludeFolder url="file://$MODULE_DIR$/HTML5-Card-Memory-Game" />
+      <excludeFolder url="file://$MODULE_DIR$/Memory-Game-fend" />
+      <excludeFolder url="file://$MODULE_DIR$/Pig-game" />
+      <excludeFolder url="file://$MODULE_DIR$/RetroSnaker" />
+      <excludeFolder url="file://$MODULE_DIR$/Sweet-HTML5-Game" />
+      <excludeFolder url="file://$MODULE_DIR$/github-games" />
+      <excludeFolder url="file://$MODULE_DIR$/gomoku" />
+      <excludeFolder url="file://$MODULE_DIR$/puzzleGame" />
+      <excludeFolder url="file://$MODULE_DIR$/react-tetris" />
+      <excludeFolder url="file://$MODULE_DIR$/soduku" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/tricolors" />
+      <excludeFolder url="file://$MODULE_DIR$/拼图" />
+      <excludeFolder url="file://$MODULE_DIR$/连连看" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

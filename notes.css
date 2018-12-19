@@ -1,0 +1,35 @@
+.formBox{
+    width: 960px;
+    margin: 0px auto;
+}
+.inputBox{
+    height: 38px;
+    width: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+.leftBox{
+    float:left;
+    width: 20%;
+    height: 38px;
+    color: #4f4f4f;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+
+}
+.rightBox{
+    float:left;
+    width: 40%;
+    height: 38px;
+    line-height: 38px;
+}
+.rightBox input{
+    width: 100%;
+    height: 28px;
+    font-size: 18px;
+    border: solid 1px #9f9f9f;
+    border-radius: 5px;
+}

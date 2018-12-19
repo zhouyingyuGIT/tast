@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>估值测试</title>
+    <link rel="stylesheet" href="valuation.css">
+
+</head>
+<body>
+<div style="width: 80%;margin: 20px auto;padding: 16px">
+    <div id="title" style="width:300px;margin: 0px auto;text-align: center;font-size: 24px;font-weight: 700;">第一题</div>
+   <div id="ti1" style="padding: 16px;border: 1px solid #eee;border-radius: 5px">
+       <h4>训练1</h4>
+       <div class="clearfix" style="height: 20px;padding: 4px;line-height: 20px">
+           <div class="fixLeft" style="width: 20px">1</div>
+           <div class="fixLeft" style="width: 90%;height: 20px;">
+               <hr id="a1" style="height: 10px;background-color: #000;border: 0px;border-radius: 5px;" align="left">
+           </div>
+       </div>
+       <div class="clearfix" style="height: 20px;padding: 4px">
+           <div class="fixLeft" style="width: 20px">2</div>
+           <div class="fixLeft" style="width: 90%">
+               <hr id="b1" style="height: 10px;background-color: #000;border: 0px;border-radius: 5px;" align="left">
+           </div>
+       </div>
+       <hr style="height: 2px;border: 0px;background-color: #000;margin: 30px 0px;">
+       <div class="clearfix" style="height: 20px;padding: 4px">
+           <div id="t1" class="fixLeft" style="width: 20px"></div>
+           <div id="total1" class="fixLeft" style="width: 90%;position: relative">
+               <div id="c1" class="cl"></div>
+               <div style="height: 20px;background-color: #0ad845;position: absolute;visibility: hidden" id="answer1"></div>
+           </div>
+       </div>
+   </div>
+    <div id="ti2" style="padding: 16px;border: 1px solid #eee;margin-top: 16px;border-radius: 5px">
+        <h4>训练2</h4>
+        <div class="clearfix" style="height: 20px;padding: 4px;line-height: 20px">
+            <div class="fixLeft" style="width: 20px">1</div>
+            <div class="fixLeft" style="width: 90%;height: 20px;">
+                <hr id="a2" style="height: 10px;background-color: #000;border: 0px;border-radius: 5px;" align="left">
+            </div>
+        </div>
+        <div class="clearfix" style="height: 20px;padding: 4px">
+            <div class="fixLeft" style="width: 20px">2</div>
+            <div class="fixLeft" style="width: 90%">
+                <hr id="b2" style="height: 10px;background-color: #000;border: 0px;border-radius: 5px;" align="left">
+            </div>
+        </div>
+        <hr style="height: 2px;border: 0px;background-color: #000;margin: 30px 0px;">
+        <div class="clearfix" style="height: 20px;padding: 4px">
+            <div id="t2" class="fixLeft" style="width: 20px"></div>
+            <div id="total2" class="fixLeft" style="width: 90%;position: relative">
+                <div id="c2" class="cl"></div>
+                <div style="height: 20px;background-color: #0ad845;position: absolute;visibility: hidden" id="answer2"></div>
+            </div>
+        </div>
+    </div>
+    <button style="margin-top: 16px" class="btn" id="btn">下一题</button>
+
+
+    <div>
+        <table>
+            <tr>
+                <td colspan="2">题目</td>
+                <td>分数</td>
+                <td>偏离(%)</td>
+                <td>平均偏离(%)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">第一题</td>
+                <td>训练1</td>
+                <td id="score11"></td>
+                <td id="deviate11"></td>
+                <td id="average1" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score12"></td>
+                <td id="deviate12"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第二题</td>
+                <td>训练1</td>
+                <td id="score21"></td>
+                <td id="deviate21"></td>
+                <td id="average2" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score22"></td>
+                <td id="deviate22"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第三题</td>
+                <td>训练1</td>
+                <td id="score31"></td>
+                <td id="deviate31"></td>
+                <td id="average3" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score32"></td>
+                <td id="deviate32"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第四题</td>
+                <td>训练1</td>
+                <td id="score41"></td>
+                <td id="deviate41"></td>
+                <td id="average4" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score42"></td>
+                <td id="deviate42"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第五题</td>
+                <td>训练1</td>
+                <td id="score51"></td>
+                <td id="deviate51"></td>
+                <td id="average5" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score52"></td>
+                <td id="deviate52"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第六题</td>
+                <td>训练1</td>
+                <td id="score61"></td>
+                <td id="deviate61"></td>
+                <td id="average6" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>训练2</td>
+                <td id="score62"></td>
+                <td id="deviate62"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="jquery.js"></script>
+<script src="valuation.js"></script>
+</html>

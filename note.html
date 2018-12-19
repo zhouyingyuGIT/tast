@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+        .cont{
+            width: 960px;
+            margin: 0px auto;
+        }
+    </style>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+<div class="cont">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mechanism" class="col-sm-2 control-label">机构</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="mechanism" placeholder="机构">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="researchField" class="col-sm-2 control-label">研究领域</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="researchField" placeholder="研究领域">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Email" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="Email" placeholder="邮箱">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Country" class="col-sm-2 control-label">国家</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="Country" placeholder="国家">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button id="button" type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+<script>
+    $(function () {
+        $("#button").on("click",function () {
+            console.log($("#name").val())
+        })
+
+
+    })
+</script>
+
+
+
+
+
+</html>

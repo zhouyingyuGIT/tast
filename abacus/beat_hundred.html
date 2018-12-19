@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打百子</title>
+    <style>
+        .box{
+            width: 800px;
+            margin: 20px auto;
+            height: 400px;
+            border: 1px solid #5e5e5e;
+            border-radius: 5px;
+            position: relative;
+        }
+        .typeBox{
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+            padding: 16px 0px;
+            height: 100px;
+        }
+        .typeBox span{
+            padding: 12px 26px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 0px 16px;
+            cursor: pointer;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+        .buttonBox{
+            position: absolute;
+            bottom: 0px;
+            height: 120px;
+            width: 100%;
+            line-height: 120px;
+            text-align: center;
+        }
+        .step{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .tabBox{
+            height: 280px;
+            width: 100%;
+            position: absolute;
+            padding-top: 16px;
+            /*background-color: #00b0f0;*/
+        }
+        .tabBox .tab{
+            height: 160px;
+            width: 100%;
+            position: absolute;
+            /*background-color: #00b0f0;*/
+        }
+        .tabBox .tab span{
+            display: inline-block;
+            padding: 12px 26px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 16px 16px;
+            cursor: pointer;
+        }
+        .tabBox .tab .topic{
+            padding: 16px;
+            margin: 16px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .tabBox .inputBox{
+            position: absolute;
+            top: 160px;
+            width: 100%;
+            padding-top: 16px;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .tabBox .inputBox input{
+            -webkit-appearance: none;
+            background-color: #fff;
+            background-image: none;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            display: inline-block;
+            font-size: 18px;
+            height: 36px;
+            line-height: 36px;
+            outline: none;
+            padding: 0 15px;
+            transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+        }
+        .step3{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .step3 .title{
+            margin-top: 16px;
+
+        }
+        .step3 .title span{
+            display: inline-block;
+            padding: 12px 26px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 16px 16px;
+            cursor: pointer;
+
+        }
+        #step1{
+            display: block;
+        }
+        #step2{
+            display: none;
+        }
+        #step3{
+            display: none;
+        }
+        #tab1{
+            display: none;
+        }
+        #tab2{
+            display: none;
+        }
+        #tab3{
+            display: none;
+        }
+        #tab4{
+            display: none;
+        }
+        #tab5{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="step1" class="step">
+        <h1 style="text-align: center;margin: 0px;padding: 20px 0px">打百子</h1>
+
+        <div class="typeBox">
+            <span id="type1">阶段一</span>
+            <span id="type2">阶段二</span>
+            <span id="type3">阶段三</span>
+            <span id="type4">阶段四</span>
+            <span id="type5">阶段五</span>
+        </div>
+
+        <div class="buttonBox">
+            <button id="stepBtn1" class="btn">结束训练</button>
+        </div>
+    </div>
+
+    <div id="step2" class="step">
+        <div class="tabBox">
+            <div id="tab1" class="tab">
+                <div class="title">
+                    <span>打百子/阶段一</span>
+                </div>
+
+                <div class="topic">题目：1+2+…+20</div>
+
+                <!--<div class="inputBox">
+                    <input id="input1" placeholder="请输入结果" type="text">
+                </div>-->
+            </div>
+            <div id="tab2" class="tab">
+                <div class="title">
+                    <span>打百子/阶段二</span>
+                </div>
+
+                <div class="topic">题目：1+2+…+20-1-2-…-20</div>
+
+                <!--<div class="inputBox">
+                    <input id="input2" placeholder="请输入结果" type="text">
+                </div>-->
+            </div>
+            <div id="tab3" class="tab">
+                <div class="title">
+                    <span>打百子/阶段三</span>
+                </div>
+
+                <div class="topic">题目：1+2+…+40-1-2…-40</div>
+
+                <!--<div class="inputBox">
+                    <input id="input3" placeholder="请输入结果" type="text">
+                </div>-->
+            </div>
+            <div id="tab4" class="tab">
+                <div class="title">
+                    <span>打百子/阶段四</span>
+                </div>
+
+                <div class="topic">题目：1+2+…+70-1-2…-70</div>
+
+                <!--<div class="inputBox">
+                    <input id="input4" placeholder="请输入结果" type="text">
+                </div>-->
+            </div>
+            <div id="tab5" class="tab">
+                <div class="title">
+                    <span>打百子/阶段五</span>
+                </div>
+
+                <div class="topic">题目：1+2+…+100-1-2…-100</div>
+
+                <!--<div class="inputBox">
+                    <input id="input5" placeholder="请输入结果" type="text">
+                </div>-->
+            </div>
+            <div class="inputBox">
+                <input id="result" placeholder="请输入结果" type="text">
+            </div>
+        </div>
+
+        <div class="buttonBox">
+            <button id="step2Btn1" class="btn">开始实拨</button>
+            <button id="step2Btn2" class="btn">结束实拨，开始虚拨</button>
+            <button id="step2Btn3" class="btn">结束虚拨</button>
+        </div>
+    </div>
+    <div id="step3" class="step">
+        <div class="step3">
+            <div class="title">
+                <span id="title">打百子/阶段一</span>
+            </div>
+
+            <div style="width: 50%;margin: 0px auto;height: 200px;text-align: center;font-weight: 700;font-size: 24px">
+                <div style="line-height: 100px">实拨时间 <span id="realTime">200</span>毫秒</div>
+                <div style="line-height: 100px">虚拨时间 <span id="dumpTime">200</span>毫秒</div>
+            </div>
+
+            <div class="buttonBox">
+                <button id="step3Btn1" class="btn">返回</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="jquery.js"></script>
+<script src="beat_hundred.js"></script>
+</html>
