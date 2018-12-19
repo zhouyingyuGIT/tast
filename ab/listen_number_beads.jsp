@@ -500,6 +500,7 @@ Vector
         var maxtime =60;
         var pqKEY=false;
         var spacer=false;
+
         beadFun(1,"3456");
         $("#digitBox").on("click",".digit",function(event){
             var target = $(event.target);
